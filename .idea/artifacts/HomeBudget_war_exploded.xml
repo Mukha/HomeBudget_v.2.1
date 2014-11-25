@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="HomeBudget:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/HomeBudget_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="HomeBudget/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="HomeBudget" />
+          <element id="jpa-descriptors" facet="HomeBudget/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql:mysql-connector-java:5.1.33" />
+          <element id="library" level="project" name="org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
+          <element id="library" level="project" name="org.hibernate:hibernate-entitymanager:4.1.9.Final" />
+          <element id="library" level="project" name="hibernate-entitymanager-4.1.9.Final" />
+          <element id="library" level="project" name="JPA 1.0-JPA 1.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
