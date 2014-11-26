@@ -262,8 +262,9 @@ public class DBUtilIncome implements IDBUtilInterface {
         for (Income in : allIncomes) {
             sum+=in.getSize();
         }
+        for ();
         for (Income in : allIncomes) {
-            ArrayList<Income> ins = (ArrayList) dbi.findIncomesByCategory(category.getCategoryId());
+            ArrayList<Income> ins = (ArrayList) dbi.findIncomesByCategory();
         }
         return null;
     }*/

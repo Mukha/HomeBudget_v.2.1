@@ -38,28 +38,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBUtilIncome.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DBUtilIncome.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/DBUtilIncome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4556" max-vertical-offset="4692">
-              <caret line="268" column="7" selection-start-line="268" selection-start-column="7" selection-end-line="268" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.29715762" vertical-offset="4169" max-vertical-offset="4641">
+              <caret line="256" column="6" selection-start-line="256" selection-start-column="6" selection-end-line="256" selection-end-column="6" />
               <folding>
-                <marker date="1416491496403" expanded="true" signature="981:1021" placeholder="INSERT INTO ..." />
-                <marker date="1416491496403" expanded="true" signature="981:1086" placeholder="INSERT INTO ..." />
-                <marker date="1416491496403" expanded="true" signature="981:1166" placeholder="INSERT INTO ..." />
-                <marker date="1416491496403" expanded="true" signature="981:1190" placeholder="INSERT INTO ..." />
-                <marker date="1416491496403" expanded="true" signature="981:1221" placeholder="INSERT INTO ..." />
-                <marker date="1416491496403" expanded="true" signature="981:1243" placeholder="INSERT INTO ..." />
-                <marker date="1416491496403" expanded="true" signature="1906:1966" placeholder="UPDATE incom..." />
-                <marker date="1416491496403" expanded="true" signature="1906:2004" placeholder="UPDATE incom..." />
-                <marker date="1416491496403" expanded="true" signature="1906:2060" placeholder="UPDATE incom..." />
-                <marker date="1416491496403" expanded="true" signature="1906:2157" placeholder="UPDATE incom..." />
-                <marker date="1416491496403" expanded="true" signature="1906:2188" placeholder="UPDATE incom..." />
-                <marker date="1416491496403" expanded="true" signature="2857:2892" placeholder="DELETE FROM ..." />
-                <marker date="1416491496403" expanded="true" signature="3726:3746" placeholder="SELECT * FRO..income..." />
-                <marker date="1416491496403" expanded="true" signature="5093:5123" placeholder="SELECT * FRO..income..." />
-                <marker date="1416491496403" expanded="true" signature="6468:6503" placeholder="SELECT * FRO..income..." />
-                <marker date="1416491496403" expanded="true" signature="7886:7925" placeholder="SELECT * FRO..income..." />
+                <marker date="1417013648698" expanded="true" signature="981:1021" placeholder="INSERT INTO ..." />
+                <marker date="1417013648698" expanded="true" signature="981:1086" placeholder="INSERT INTO ..." />
+                <marker date="1417013648698" expanded="true" signature="981:1166" placeholder="INSERT INTO ..." />
+                <marker date="1417013648698" expanded="true" signature="981:1190" placeholder="INSERT INTO ..." />
+                <marker date="1417013648698" expanded="true" signature="981:1221" placeholder="INSERT INTO ..." />
+                <marker date="1417013648698" expanded="true" signature="981:1243" placeholder="INSERT INTO ..." />
+                <marker date="1417013648698" expanded="true" signature="1906:1966" placeholder="UPDATE incom..." />
+                <marker date="1417013648698" expanded="true" signature="1906:2004" placeholder="UPDATE incom..." />
+                <marker date="1417013648698" expanded="true" signature="1906:2060" placeholder="UPDATE incom..." />
+                <marker date="1417013648698" expanded="true" signature="1906:2157" placeholder="UPDATE incom..." />
+                <marker date="1417013648698" expanded="true" signature="1906:2188" placeholder="UPDATE incom..." />
+                <marker date="1417013648698" expanded="true" signature="2857:2892" placeholder="DELETE FROM ..." />
+                <marker date="1417013648698" expanded="true" signature="3726:3746" placeholder="SELECT * FRO..income..." />
+                <marker date="1417013648698" expanded="true" signature="5093:5123" placeholder="SELECT * FRO..income..." />
+                <marker date="1417013648698" expanded="true" signature="6468:6503" placeholder="SELECT * FRO..income..." />
+                <marker date="1417013648698" expanded="true" signature="7886:7925" placeholder="SELECT * FRO..income..." />
               </folding>
             </state>
           </provider>
@@ -87,14 +87,14 @@
       <file leaf-file-name="Action.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2737">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2414">
               <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1088">
@@ -107,8 +107,8 @@
       <file leaf-file-name="account.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/account.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3961" max-vertical-offset="4216">
-              <caret line="233" column="35" selection-start-line="224" selection-start-column="30" selection-end-line="233" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="4216">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -117,8 +117,8 @@
       <file leaf-file-name="income.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/income.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1927" max-vertical-offset="2567">
-              <caret line="124" column="112" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="112" />
+            <state vertical-scroll-proportion="-1.1153846" vertical-offset="906" max-vertical-offset="2227">
+              <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -127,7 +127,7 @@
       <file leaf-file-name="DBUtilCategory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/DBUtilCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2941" max-vertical-offset="3247">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2575" max-vertical-offset="3179">
               <caret line="173" column="78" selection-start-line="173" selection-start-column="78" selection-end-line="173" selection-end-column="78" />
               <folding>
                 <marker date="1416460973777" expanded="true" signature="1007:1116" placeholder="INSERT INTO ..." />
@@ -175,13 +175,14 @@
         <option value="$PROJECT_DIR$/web/registration.jsp" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilUser.java" />
         <option value="$PROJECT_DIR$/src/servlets/Action.java" />
-        <option value="$PROJECT_DIR$/web/account.jsp" />
         <option value="$PROJECT_DIR$/src/entities/Expense.java" />
         <option value="$PROJECT_DIR$/src/entities/Income.java" />
         <option value="$PROJECT_DIR$/src/entities/Category.java" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilExpense.java" />
-        <option value="$PROJECT_DIR$/src/classes/CommonTags.java" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilCategory.java" />
+        <option value="dbtable:/e1df515c/2e88ae99-4e93-42fc-9256-a4f4709158b4/test..income" />
+        <option value="$PROJECT_DIR$/web/account.jsp" />
+        <option value="$PROJECT_DIR$/src/classes/CommonTags.java" />
         <option value="$PROJECT_DIR$/web/income.jsp" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilIncome.java" />
       </list>
@@ -231,7 +232,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +285,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -533,12 +534,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -557,6 +552,12 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.0" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -669,12 +670,13 @@
       <workItem from="1416190245885" duration="32095000" />
       <workItem from="1416388708745" duration="13670000" />
       <workItem from="1416661681264" duration="210000" />
-      <workItem from="1416889373632" duration="5000" />
+      <workItem from="1416889373632" duration="4539000" />
+      <workItem from="1416998475506" duration="1709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119573000" />
+    <option name="totallyTimeSpent" value="125816000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -697,15 +699,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1925982" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1925982" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6143791" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -714,6 +716,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947713" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33660132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24093656" sideWeight="0.19018404" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -722,7 +725,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23716012" sideWeight="0.80981594" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46078432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26960784" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24609666" sideWeight="0.37866667" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65522873" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -731,18 +734,17 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4248366" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33660132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24609666" sideWeight="0.37866667" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26963747" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947713" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947713" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -764,9 +766,9 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33660132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24093656" sideWeight="0.19018404" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24089219" sideWeight="0.19018404" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24089219" sideWeight="0.19018404" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -799,13 +801,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/servlets/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1819">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/CommonTags.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="2295">
@@ -965,6 +960,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="17" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,6 +1017,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3388" max-vertical-offset="11713">
           <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,20 +1057,12 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/e1df515c/2e88ae99-4e93-42fc-9256-a4f4709158b4/test..users">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2448">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1122,13 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/CommonTags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2754">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/DBUtilUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3511" max-vertical-offset="4063">
@@ -1137,10 +1119,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/e1df515c/2e88ae99-4e93-42fc-9256-a4f4709158b4/test..income">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1088">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/CommonTags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06952965" vertical-offset="612" max-vertical-offset="2754">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/account.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3961" max-vertical-offset="4216">
-          <caret line="233" column="35" selection-start-line="224" selection-start-column="30" selection-end-line="233" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="4216">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/income.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1153846" vertical-offset="906" max-vertical-offset="2227">
+          <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2448">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1160,44 +1183,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/income.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1927" max-vertical-offset="2567">
-          <caret line="124" column="112" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/DBUtilIncome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4015" max-vertical-offset="4624">
-          <caret line="268" column="7" selection-start-line="268" selection-start-column="7" selection-end-line="268" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.29715762" vertical-offset="4169" max-vertical-offset="4641">
+          <caret line="256" column="6" selection-start-line="256" selection-start-column="6" selection-end-line="256" selection-end-column="6" />
           <folding>
-            <marker date="1416491496403" expanded="true" signature="981:1021" placeholder="INSERT INTO ..." />
-            <marker date="1416491496403" expanded="true" signature="981:1086" placeholder="INSERT INTO ..." />
-            <marker date="1416491496403" expanded="true" signature="981:1166" placeholder="INSERT INTO ..." />
-            <marker date="1416491496403" expanded="true" signature="981:1190" placeholder="INSERT INTO ..." />
-            <marker date="1416491496403" expanded="true" signature="981:1221" placeholder="INSERT INTO ..." />
-            <marker date="1416491496403" expanded="true" signature="981:1243" placeholder="INSERT INTO ..." />
-            <marker date="1416491496403" expanded="true" signature="1906:1966" placeholder="UPDATE incom..." />
-            <marker date="1416491496403" expanded="true" signature="1906:2004" placeholder="UPDATE incom..." />
-            <marker date="1416491496403" expanded="true" signature="1906:2060" placeholder="UPDATE incom..." />
-            <marker date="1416491496403" expanded="true" signature="1906:2157" placeholder="UPDATE incom..." />
-            <marker date="1416491496403" expanded="true" signature="1906:2188" placeholder="UPDATE incom..." />
-            <marker date="1416491496403" expanded="true" signature="2857:2892" placeholder="DELETE FROM ..." />
-            <marker date="1416491496403" expanded="true" signature="3726:3746" placeholder="SELECT * FRO..income..." />
-            <marker date="1416491496403" expanded="true" signature="5093:5123" placeholder="SELECT * FRO..income..." />
-            <marker date="1416491496403" expanded="true" signature="6468:6503" placeholder="SELECT * FRO..income..." />
-            <marker date="1416491496403" expanded="true" signature="7886:7925" placeholder="SELECT * FRO..income..." />
+            <marker date="1417013648698" expanded="true" signature="981:1021" placeholder="INSERT INTO ..." />
+            <marker date="1417013648698" expanded="true" signature="981:1086" placeholder="INSERT INTO ..." />
+            <marker date="1417013648698" expanded="true" signature="981:1166" placeholder="INSERT INTO ..." />
+            <marker date="1417013648698" expanded="true" signature="981:1190" placeholder="INSERT INTO ..." />
+            <marker date="1417013648698" expanded="true" signature="981:1221" placeholder="INSERT INTO ..." />
+            <marker date="1417013648698" expanded="true" signature="981:1243" placeholder="INSERT INTO ..." />
+            <marker date="1417013648698" expanded="true" signature="1906:1966" placeholder="UPDATE incom..." />
+            <marker date="1417013648698" expanded="true" signature="1906:2004" placeholder="UPDATE incom..." />
+            <marker date="1417013648698" expanded="true" signature="1906:2060" placeholder="UPDATE incom..." />
+            <marker date="1417013648698" expanded="true" signature="1906:2157" placeholder="UPDATE incom..." />
+            <marker date="1417013648698" expanded="true" signature="1906:2188" placeholder="UPDATE incom..." />
+            <marker date="1417013648698" expanded="true" signature="2857:2892" placeholder="DELETE FROM ..." />
+            <marker date="1417013648698" expanded="true" signature="3726:3746" placeholder="SELECT * FRO..income..." />
+            <marker date="1417013648698" expanded="true" signature="5093:5123" placeholder="SELECT * FRO..income..." />
+            <marker date="1417013648698" expanded="true" signature="6468:6503" placeholder="SELECT * FRO..income..." />
+            <marker date="1417013648698" expanded="true" signature="7886:7925" placeholder="SELECT * FRO..income..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1088">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>

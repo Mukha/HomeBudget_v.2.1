@@ -14,6 +14,7 @@
 <% DBUtilCategory dbc = new DBUtilCategory(); %>
 <% DBUtilIncome dbi = new DBUtilIncome();%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD html 4.0 transitional//EN">
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <head>
     <%=tags.getLinks("account")%>
 </head>
@@ -24,30 +25,6 @@
 <div class="container-fluid">
     <%=tags.getHeader("menu")%>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <h1 class="page-header">Dashboard</h1>
-
-        <div class="row placeholders">
-            <!--<div class="col-xs-6 col-sm-3 placeholder">
-                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-            </div>-->
-        </div>
 
         <h2 class="sub-header">My incomes</h2>
         <div id="chart"></div>
@@ -60,6 +37,7 @@
                     <th>Date</th>
                     <th>Amount (KZT) </th>
                     <th>Description</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -74,6 +52,8 @@
                     <td><%=in.getDate()%></td>
                     <td><%=in.getSize()%></td>
                     <td><%=in.getDescription()%></td>
+                    <td><a href="Action?type=income&id=<%=in.getId()%>">
+                        <img src="img/edit.png" width="25" height="25"></a></td>
                 </tr>
                 <%count++;}%>
                 </tbody>
