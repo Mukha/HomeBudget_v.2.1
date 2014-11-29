@@ -28,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DBUtilIncome.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DBUtilIncome.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/DBUtilIncome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3277" max-vertical-offset="4233">
-              <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.21226415" vertical-offset="318" max-vertical-offset="4233">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
                 <element signature="e#6407#6415#0" expanded="true" />
                 <marker date="1417014402241" expanded="true" signature="1007:1269" placeholder="INSERT INTO ..." />
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="income.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="income.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/income.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8869347" vertical-offset="2860" max-vertical-offset="3587">
-              <caret line="189" column="33" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.5769231" vertical-offset="3092" max-vertical-offset="3587">
+              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,8 +83,18 @@
       <file leaf-file-name="Action.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="831" max-vertical-offset="2448">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="2737">
+              <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Income.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/Income.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="2635">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -105,6 +115,16 @@
                 <marker date="1417111465011" expanded="true" signature="6708:6743" placeholder="SELECT * FRO..category..." />
                 <marker date="1417111465011" expanded="true" signature="7848:7883" placeholder="SELECT * FRO..category..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/form.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.153846" vertical-offset="552" max-vertical-offset="1751">
+              <caret line="48" column="78" selection-start-line="48" selection-start-column="78" selection-end-line="48" selection-end-column="78" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,20 +162,20 @@
         <option value="$PROJECT_DIR$/web/registration.jsp" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilUser.java" />
         <option value="$PROJECT_DIR$/src/entities/Expense.java" />
-        <option value="$PROJECT_DIR$/src/entities/Income.java" />
         <option value="$PROJECT_DIR$/src/entities/Category.java" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilExpense.java" />
         <option value="$PROJECT_DIR$/web/account.jsp" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilIncome.java" />
         <option value="dbtable:/e1df515c/2e88ae99-4e93-42fc-9256-a4f4709158b4/test..users" />
-        <option value="$PROJECT_DIR$/src/servlets/Action.java" />
         <option value="dbtable:/e1df515c/2e88ae99-4e93-42fc-9256-a4f4709158b4/test..income" />
         <option value="$PROJECT_DIR$/web/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/src/classes/CommonTags.java" />
         <option value="dbtable:/e1df515c/2e88ae99-4e93-42fc-9256-a4f4709158b4/test..category" />
         <option value="$PROJECT_DIR$/src/utils/DBUtilCategory.java" />
-        <option value="$PROJECT_DIR$/web/form.jsp" />
         <option value="$PROJECT_DIR$/web/income.jsp" />
+        <option value="$PROJECT_DIR$/web/form.jsp" />
+        <option value="$PROJECT_DIR$/src/entities/Income.java" />
+        <option value="$PROJECT_DIR$/src/servlets/Action.java" />
       </list>
     </option>
   </component>
@@ -658,12 +678,12 @@
       <workItem from="1416388708745" duration="13670000" />
       <workItem from="1416661681264" duration="210000" />
       <workItem from="1416889373632" duration="4539000" />
-      <workItem from="1416998475506" duration="32518000" />
+      <workItem from="1416998475506" duration="34978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156625000" />
+    <option name="totallyTimeSpent" value="159085000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -712,7 +732,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23716012" sideWeight="0.80981594" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20915033" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20915033" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24609666" sideWeight="0.37866667" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65522873" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -902,13 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Income.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8819444" vertical-offset="588" max-vertical-offset="2618">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/DBUtilExpense.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2941">
@@ -983,14 +996,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.846154" vertical-offset="807" max-vertical-offset="1751">
-          <caret line="61" column="113" selection-start-line="61" selection-start-column="113" selection-end-line="61" selection-end-column="113" />
           <folding />
         </state>
       </provider>
@@ -1122,31 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/DBUtilIncome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3277" max-vertical-offset="4233">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding>
-            <element signature="e#6407#6415#0" expanded="true" />
-            <marker date="1417014402241" expanded="true" signature="1007:1269" placeholder="INSERT INTO ..." />
-            <marker date="1417014402241" expanded="true" signature="1932:2214" placeholder="UPDATE incom..." />
-            <marker date="1417014402241" expanded="true" signature="2883:2918" placeholder="DELETE FROM ..." />
-            <marker date="1417014402241" expanded="true" signature="3752:3772" placeholder="SELECT * FRO..income..." />
-            <marker date="1417014402241" expanded="true" signature="5119:5149" placeholder="SELECT * FRO..income..." />
-            <marker date="1417014402241" expanded="true" signature="6494:6529" placeholder="SELECT * FRO..income..." />
-            <marker date="1417014402241" expanded="true" signature="7912:7951" placeholder="SELECT * FRO..income..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="831" max-vertical-offset="2448">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/DBUtilCategory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1599" max-vertical-offset="4267">
@@ -1185,9 +1165,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/income.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8869347" vertical-offset="2860" max-vertical-offset="3587">
-          <caret line="189" column="33" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.5769231" vertical-offset="3092" max-vertical-offset="3587">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.153846" vertical-offset="552" max-vertical-offset="1751">
+          <caret line="48" column="78" selection-start-line="48" selection-start-column="78" selection-end-line="48" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Income.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="2635">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="2737">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/DBUtilIncome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21226415" vertical-offset="318" max-vertical-offset="4233">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#6407#6415#0" expanded="true" />
+            <marker date="1417014402241" expanded="true" signature="1007:1269" placeholder="INSERT INTO ..." />
+            <marker date="1417014402241" expanded="true" signature="1932:2214" placeholder="UPDATE incom..." />
+            <marker date="1417014402241" expanded="true" signature="2883:2918" placeholder="DELETE FROM ..." />
+            <marker date="1417014402241" expanded="true" signature="3752:3772" placeholder="SELECT * FRO..income..." />
+            <marker date="1417014402241" expanded="true" signature="5119:5149" placeholder="SELECT * FRO..income..." />
+            <marker date="1417014402241" expanded="true" signature="6494:6529" placeholder="SELECT * FRO..income..." />
+            <marker date="1417014402241" expanded="true" signature="7912:7951" placeholder="SELECT * FRO..income..." />
+          </folding>
         </state>
       </provider>
     </entry>

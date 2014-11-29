@@ -150,10 +150,12 @@
                     text: 'Monthly Incomes'
                 },
                 subtitle: {
-                    text: ''
+                    text: 'Year: 2014'
                 },
                 xAxis: {
-                    categories: ['September', 'October', 'November']
+                    categories: [/*'January', 'February', 'March', 'April',
+                    'May', 'June', 'July', 'August',*/ 'September', 'October',
+                    'November', 'December']
                 },
                 yAxis: {
                     title: {
@@ -191,7 +193,6 @@
                         if (cTemp1.getCategoryId() == category.getCategoryId()){
                             out.println("}");
                         } else out.println("},");
-
                     }
                     }
                     %>

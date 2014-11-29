@@ -34,9 +34,9 @@
         <form class="form-signin" role="form" action="Action" method="GET">
             <h2 class="form-signin-heading">Type income details</h2>
             Date:
-                <input  type="text" placeholder="Date" class="form-control"  id="date" style="width: 20%" name="date">
+                <input  type="text" placeholder="Date" class="form-control" id="date" style="width: 20%" name="date">
             <br>
-            Amount (KZT): <input type="text" class="form-control" placeholder="Amount" style="width: 35%"><br>
+            Amount (KZT): <input type="text" class="form-control" name="size" placeholder="Amount" style="width: 35%"><br>
             Category:
             <select class="form-control" name="category" style="width: 65%">
                 <%ArrayList<Category> categories = (ArrayList) dbc.findAllForIncomes();
@@ -46,7 +46,7 @@
                 }
                 %>
             </select><br>
-            Description: <textarea type="text" class="form-control" placeholder="Description" style="width: 65%">
+            Description: <textarea type="text" class="form-control" name="desc" placeholder="Description" style="width: 65%">
             </textarea>
             <br>
             <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 25%">Submit</button>

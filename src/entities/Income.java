@@ -40,6 +40,11 @@ public class Income {
     private double size;
 
     /**
+     * Default constructor
+     */
+    public Income () {}
+
+    /**
      * The 6-parameter constructor. Is used to create an income instance.
      *
      * @param id the income's id.

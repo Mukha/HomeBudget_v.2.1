@@ -153,8 +153,8 @@
                     text: 'Year: 2014'
                 },
                 xAxis: {
-                    categories: ['January', 'February', 'March', 'April',
-                    'May', 'June', 'July', 'August', 'September', 'October',
+                    categories: [/*'January', 'February', 'March', 'April',
+                    'May', 'June', 'July', 'August',*/ 'September', 'October',
                     'November', 'December']
                 },
                 yAxis: {

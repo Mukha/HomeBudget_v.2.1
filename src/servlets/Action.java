@@ -6,8 +6,11 @@
 
 package servlets;
 
+import entities.Income;
 import entities.User;
 import interfaces.IDBUtilInterface;
+import utils.DBUtilCategory;
+import utils.DBUtilIncome;
 import utils.DBUtilUser;
 
 import java.io.IOException;
@@ -32,7 +35,7 @@ import javax.servlet.http.HttpSession;
 public class Action extends HttpServlet {
 
     DBUtilUser dbUtil = new DBUtilUser();
-
+    DBUtilIncome dbc = new DBUtilIncome();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -106,6 +109,23 @@ public class Action extends HttpServlet {
                 }
             } else if (type.equals("addinc")) {
                 response.sendRedirect("form.jsp?form=addinc");
+            } else if (type.equals("addexp")) {
+                response.sendRedirect("form.jsp?form=addexp");
+            } else if (type.equals("newinc")) {
+                int categoryId = Integer.parseInt(request.getParameter("category"));
+                String date = request.getParameter("date");
+                double size = Double.parseDouble(request.getParameter("size"));
+                String description = request.getParameter("desc");
+
+                Income income = new Income();
+                income.setCategoryId(categoryId);
+                income.setDate(date);
+                income.setSize(size);
+                income.setDescription(description);
+                User user = (User)request.getAttribute("Account");
+                income.setUserId(user.getUserId());
+                dbc.insert(income);
+            } else if (type.equals("newexp")) {
             }else {}
         } catch (SQLException e) {
             e.printStackTrace();
