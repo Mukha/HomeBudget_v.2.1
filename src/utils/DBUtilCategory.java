@@ -182,4 +182,68 @@ public class DBUtilCategory implements IDBUtilInterface {
         }
         return lastId;
     }
+/////////////////////////////////////////////////////////////////////////////////////////////
+    /**
+     * The <i>findAll()</i> method retrieves all records from the database
+     * which are the instances of class Category.
+     * <p/>
+     * Returns the array list of all records from database.
+     *
+     * @return the array list of all records existing in the database.
+     * @see entities.Category
+     */
+
+    public ArrayList<Object> findAllForIncomes() {
+        try {
+            Connection conn = DriverManager.getConnection(url, username, password);
+            ArrayList<Category> array = new ArrayList<Category>();
+            if (conn != null) { // Connected
+                String sql = "SELECT * FROM category where type=0";
+
+                Statement statement = conn.createStatement();
+                ResultSet result = statement.executeQuery(sql);
+
+                while (result.next()) {
+                    array.add(new Category(result.getInt("category_id"),
+                            result.getString("category_name")));
+                }
+                return (ArrayList) array;
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * The <i>findAll()</i> method retrieves all records from the database
+     * which are the instances of class Category.
+     * <p/>
+     * Returns the array list of all records from database.
+     *
+     * @return the array list of all records existing in the database.
+     * @see entities.Category
+     */
+
+    public ArrayList<Object> findAllForExpenses() {
+        try {
+            Connection conn = DriverManager.getConnection(url, username, password);
+            ArrayList<Category> array = new ArrayList<Category>();
+            if (conn != null) { // Connected
+                String sql = "SELECT * FROM category where type=1";
+
+                Statement statement = conn.createStatement();
+                ResultSet result = statement.executeQuery(sql);
+
+                while (result.next()) {
+                    array.add(new Category(result.getInt("category_id"),
+                            result.getString("category_name")));
+                }
+                return (ArrayList) array;
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
 }

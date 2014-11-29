@@ -1,5 +1,5 @@
 <!-- Page scoped bean for a common header and footer. -->
-<jsp:useBean id="tags" scope="page" class='classes.CommonTags' />
+<jsp:useBean id="tags" scope="page" class='classes.CommonTags'/>
 <%
     // Get an error messages in the request object.
     String error = (request.getParameter("error") == null)
@@ -32,7 +32,9 @@
 
         <form class="form-signin" role="form" action="Action" method="GET">
             <h2 class="form-signin-heading">Please Login</h2>
-            <p style="color:red"><%=error%></p>
+
+            <p style="color:red"><%=error%>
+            </p>
             <input type="text" class="form-control" placeholder="Email address" required autofocus name="email">
             <input type="password" class="form-control" placeholder="Password" required name="password">
             <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
@@ -45,7 +47,8 @@
         <%=tags.getFooter()%>
     </div>
 
-</div> <!-- /container -->
+</div>
+<!-- /container -->
 <%=tags.getJquery()%>
 </body>
 </html>

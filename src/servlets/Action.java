@@ -104,7 +104,9 @@ public class Action extends HttpServlet {
                     response.sendRedirect("registration.jsp?error" +
                             "=The user with the given email already exists!");
                 }
-            } else {}
+            } else if (type.equals("addinc")) {
+                response.sendRedirect("form.jsp?form=addinc");
+            }else {}
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {

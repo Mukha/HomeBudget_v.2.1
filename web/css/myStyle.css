@@ -8,15 +8,21 @@ and open the template in the editor.
     Author     : Мадина
 */
 
-#homelink {text-decoration: none;}
+#homelink {
+    text-decoration: none;
+}
 
-#homelink:link{color:#999999;}
+#homelink:link {
+    color: #999999;
+}
 
-#homelink:hover{color:#999999;}
+#homelink:hover {
+    color: #999999;
+}
 
 #modalContent1 {
-    width:400px;
-    height:340px;
+    width: 400px;
+    height: 340px;
     background-color: #fff;
     margin-top: 160px;
     border: 1px solid #999999;
@@ -24,14 +30,14 @@ and open the template in the editor.
 }
 
 #form {
-    margin-left:50px; 
+    margin-left: 50px;
     margin-right: 50px;
     margin-top: 5px;
 }
 
 #modalContent2 {
-    width:400px;
-    height:390px;
+    width: 400px;
+    height: 390px;
     background-color: #fff;
     margin-top: 160px;
     border: 1px solid #999999;

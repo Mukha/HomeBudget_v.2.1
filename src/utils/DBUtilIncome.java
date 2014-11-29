@@ -1,5 +1,6 @@
 package utils;
 
+import entities.Category;
 import entities.Income;
 import interfaces.IDBUtilInterface;
 
@@ -244,28 +245,4 @@ public class DBUtilIncome implements IDBUtilInterface {
         }
         return null;
     }
-
-    /** EDIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * The <i>findAll()</i> method retrieves all incomes from the database
-     * which are related to specific category.
-     * <p/>
-     *
-     * Returns the array list of all incomes of specific category.
-     * @return the array list of all incomes of specific category.
-     * @see entities.Income
-     */
-    /*public ArrayList<Double> calculatePercentage(int userId){
-        ArrayList<Double> percents = new ArrayList<Double>();
-        DBUtilIncome dbi = new DBUtilIncome();
-        double sum = 0;
-        ArrayList<Income> allIncomes = (ArrayList) dbi.findIncomes(userId);
-        for (Income in : allIncomes) {
-            sum+=in.getSize();
-        }
-        for ();
-        for (Income in : allIncomes) {
-            ArrayList<Income> ins = (ArrayList) dbi.findIncomesByCategory();
-        }
-        return null;
-    }*/
 }

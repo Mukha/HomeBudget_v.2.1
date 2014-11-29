@@ -1013,6 +1013,7 @@
     <table name="category" schema="" catalog="test" type="TABLE">
       <column name="category_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="category_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="category_id"/>
     </table>
     <table name="expense" schema="" catalog="test" type="TABLE">
