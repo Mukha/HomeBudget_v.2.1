@@ -1,17 +1,15 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="entities.User" %>
-<%@ page import="utils.DBUtilUser" %>
 <%@ page import="utils.DBUtilCategory" %>
-<%@ page import="utils.DBUtilIncome" %>
-<%@ page import="entities.Income" %>
+<%@ page import="utils.DBUtilExpense" %>
+<%@ page import="entities.Expense" %>
 <%@ page import="entities.Category" %>
 <jsp:useBean id="tags" scope="page" class='classes.CommonTags'/>
 <%
     User user = (User) session.getAttribute("Account");
 %>
-<% DBUtilUser dbu = new DBUtilUser(); %>
 <% DBUtilCategory dbc = new DBUtilCategory(); %>
-<% DBUtilIncome dbi = new DBUtilIncome();%>
+<% DBUtilExpense dbe = new DBUtilExpense();%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD html 4.0 transitional//EN">
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
@@ -26,18 +24,18 @@
     <%=tags.getHeader("menu")%>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-        <h2 class="sub-header">My incomes</h2>
-        <% ArrayList<Income> incomes = (ArrayList) dbi.findIncomes(user.getUserId());
-            if (!incomes.isEmpty()) {
+        <h2 class="sub-header">My Expenses</h2>
+        <% ArrayList<Expense> expenses = (ArrayList) dbe.findExpenses(user.getUserId());
+            if (!expenses.isEmpty()) {
                 out.println("<div id = \"chart\" ></div >");
                 out.println("<div id = \"chart2\" ></div >");
             } %>
         <div class="table-responsive">
             <%
-                if (incomes.isEmpty()) {
+                if (expenses.isEmpty()) {
                     out.println("<p>");
-                    out.println("<a href=\"Action?type=addinc&id=" + user.getUserId() + "\" class=\"btn btn-primary btn-lg active\" role=\"button\">" +
-                            "Add income</a>");
+                    out.println("<a href=\"Action?type=addexp\" class=\"btn btn-primary btn-lg active\" role=\"button\">" +
+                            "Add Expense</a>");
                     out.println("</p>");
                 } else {
 
@@ -56,31 +54,30 @@
                             + "<tbody>");
                     Category cat;
                     int count = 1;
-                    for (Income in : incomes) {
-                        cat = (Category) dbc.findById(in.getCategoryId());%>
+                    for (Expense exp : expenses) {
+                        cat = (Category) dbc.findById(exp.getCategoryId());%>
             <tr>
                 <td><%=count%>
                 </td>
                 <td><%=cat.getCategoryName()%>
                 </td>
-                <td><%=in.getDate()%>
+                <td><%=exp.getDate()%>
                 </td>
-                <td><%=in.getSize()%>
+                <td><%=exp.getSize()%>
                 </td>
-                <td><%=in.getDescription()%>
+                <td><%=exp.getDescription()%>
                 </td>
-                <td><a href="Action?type=income&id=<%=in.getId()%>">
+                <td><a href="Action?type=expense&id=<%=exp.getId()%>">
                     <img src="img/edit.png" width="25" height="25"></a></td>
-                <td><a href="Action?type=delincome&id=<%=in.getId()%>">
+                <td><a href="Action?type=delexpense&id=<%=exp.getId()%>">
                     <img src="img/delete.png" width="25" height="25"></a></td>
             </tr>
             <%
                     count++;
                 }
             %>
-            <% out.println("</tbody></table><p><a href=\"Action?type=addinc&id=" +
-                    user.getUserId() +
-                    "\" class=\"btn btn-primary btn-lg active\" role=\"button\">Add income</a>"+
+            <% out.println("</tbody></table><p><a href=\"Action?type=addexp" +
+                    "\" class=\"btn btn-primary btn-lg active\" role=\"button\">Add Expense</a>"+
                     "</p>"+
                     "</div>");
             }%>
@@ -98,7 +95,7 @@
                     plotShadow: false
                 },
                 title: {
-                    text: 'Incomes by categories'
+                    text: 'Expenses by categories'
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -119,18 +116,19 @@
                 series: [
                     {
                         type: 'pie',
-                        name: 'Incomes',
-                        data: [<%
-                        ArrayList<Category> cats = (ArrayList) dbc.findAllForIncomes();
+                        name: 'Expenses',
+                        data: [
+                        <%
+                        ArrayList<Category> cats = (ArrayList) dbc.findAllForExpenses();
                         Category cTemp = cats.get(cats.size()-1);
                         for (Category category : cats) {
-                            ArrayList<Income> ins = (ArrayList) dbi.findIncomesByCategory(category.getCategoryId());
-                            if (!ins.isEmpty()) {
-                                double sum = 0;
+                            ArrayList<Expense> exp = (ArrayList) dbe.findExpensesByCategory(category.getCategoryId());
+                            if (!exp.isEmpty()) {
                                 out.println("['" + category.getCategoryName() + "',");
-                                    for(Income in : ins) {
-                                        if (in.getUserId() == user.getUserId()) {
-                                        sum+=in.getSize();}
+                                double sum = 0;
+                                    for(Expense e : exp) {
+                                        if (e.getUserId() == user.getUserId()) {
+                                        sum+=e.getSize();}
                                     }
 
                                 if (cTemp.getCategoryId() == category.getCategoryId()){
@@ -151,15 +149,15 @@
                     type: 'line'
                 },
                 title: {
-                    text: 'Monthly Incomes'
+                    text: 'Monthly Expenses'
                 },
                 subtitle: {
                     text: 'Year: 2014'
                 },
                 xAxis: {
                     categories: [/*'January', 'February', 'March', 'April',
-                    'May', 'June', 'July', 'August',*/ 'September', 'October',
-                    'November', 'December']
+                     'May', 'June', 'July', 'August',*/ 'September', 'October',
+                        'November', 'December']
                 },
                 yAxis: {
                     title: {
@@ -176,21 +174,21 @@
                 },
                 series: [
                     <%
-                    ArrayList<Category> cats1 = (ArrayList) dbc.findAllForIncomes();
+                    ArrayList<Category> cats1 = (ArrayList) dbc.findAllForExpenses();
                     Category cTemp1 = cats1.get(cats1.size()-1);
                     for (Category category : cats1) {
 
-                    ArrayList<Income> ins = (ArrayList) dbi.findIncomesByCategory(category.getCategoryId());
-                    if (!ins.isEmpty()){
+                    ArrayList<Expense> exp = (ArrayList) dbe.findExpensesByCategory(category.getCategoryId());
+                    if (!exp.isEmpty()){
                         out.println("{");
                         out.println(" name:'" + category.getCategoryName() + "',");
                         out.println(" data: [ ");
 
-                        Income temp = ins.get(ins.size()-1);
-                            for (Income in : ins) {
-                                    if (in.getUserId() == user.getUserId()){
-                                        out.print(in.getSize());
-                                        if (in.getId() != temp.getId()) out.print(", ");
+                        Expense temp = exp.get(exp.size()-1);
+                            for (Expense e : exp) {
+                                    if (e.getUserId() == user.getUserId()){
+                                        out.print(e.getSize());
+                                        if (e.getId() != temp.getId()) out.print(", ");
                                     }
                             }
                         out.println("]");

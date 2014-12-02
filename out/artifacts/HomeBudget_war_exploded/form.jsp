@@ -5,6 +5,8 @@
 <%@ page import="utils.DBUtilIncome" %>
 <%@ page import="entities.Income" %>
 <%@ page import="entities.Category" %>
+<%@ page import="entities.Expense" %>
+<%@ page import="utils.DBUtilExpense" %>
 <jsp:useBean id="tags" scope="page" class='classes.CommonTags'/>
 
 <%
@@ -18,6 +20,8 @@
 %>
 <% DBUtilCategory dbc = new DBUtilCategory(); %>
 <% DBUtilIncome dbi = new DBUtilIncome();%>
+<% DBUtilExpense dbe = new DBUtilExpense();%>
+<% DBUtilUser dbu = new DBUtilUser();%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -79,6 +83,116 @@
         </form>
         <%}%>
 
+        <% if(form.equals("updinc")){
+        int id = Integer.parseInt(request.getParameter("id"));
+        Income inc = (Income) dbi.findById(id);
+        %>
+        <h2 class="sub-header">Update income</h2>
+        <form class="form-signin" role="form" action="Action" method="GET">
+            <h2 class="form-signin-heading">Type expense details</h2>
+            Date:
+            <input  type="text" placeholder="<%=inc.getDate()%>" class="form-control"  id="date2" style="width: 20%" name="date">
+            <br>
+            Amount (KZT): <input type="text" class="form-control" name="size"
+                                 placeholder="<%=inc.getSize()%>" style="width: 35%"><br>
+            Category:
+            <select class="form-control" name="category" style="width: 65%">
+                <%ArrayList<Category> categories = (ArrayList) dbc.findAllForIncomes();
+                    for (Category cat : categories) {
+                        out.println("<option value=" + cat.getCategoryId() +
+                                ">" + cat.getCategoryName() + "</option>");
+                    }
+                %>
+            </select><br>
+            Description: <input type="text" class="form-control" name="description"
+                                placeholder="<%=inc.getDescription()%>" style="width: 65%">
+
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 25%">Submit</button>
+            <input type="hidden" name="type" value="updinc">
+            <input type="hidden" name="id" value="<%=inc.getId()%>">
+        </form>
+        <%}%>
+
+        <% if(form.equals("updexp")){
+            int id = Integer.parseInt(request.getParameter("id"));
+            Expense exp = (Expense) dbe.findById(id);
+        %>
+        <h2 class="sub-header">Update expense</h2>
+        <form class="form-signin" role="form" action="Action" method="GET">
+            <h2 class="form-signin-heading">Type expense details</h2>
+            Date:
+            <input  type="text" placeholder="<%=exp.getDate()%>" class="form-control"  id="date3" style="width: 20%" name="date">
+            <br>
+            Amount (KZT): <input type="text" class="form-control" name="size"
+                                 placeholder="<%=exp.getSize()%>" style="width: 35%"><br>
+            Category:
+            <select class="form-control" name="category" style="width: 65%">
+                <%ArrayList<Category> categories = (ArrayList) dbc.findAllForExpenses();
+                    for (Category cat : categories) {
+                        out.println("<option value=" + cat.getCategoryId() +
+                                ">" + cat.getCategoryName() + "</option>");
+                    }
+                %>
+            </select><br>
+            Description: <input type="text" class="form-control" name="description"
+                                placeholder="<%=exp.getDescription()%>" style="width: 65%">
+
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 25%">Submit</button>
+            <input type="hidden" name="type" value="updexp">
+            <input type="hidden" name="id" value="<%=exp.getId()%>">
+        </form>
+        <%}%>
+
+        <%if (form.equals("account")) {%>
+
+        <h2 class="sub-header">Profile details</h2>
+        <form class="form-signin" role="form" action="Action" method="GET">
+            <h2 class="form-signin-heading">You can change your account details</h2>
+            First name:
+            <input  type="text" value="<%=user.getFname()%>"
+                    class="form-control" style="width: 65%" name="fname" disabled>
+            <br>
+            First name:
+            <input  type="text" value="<%=user.getLname()%>"
+                    class="form-control" style="width: 65%" name="lname" disabled>
+            <br>
+            Email: <input type="text" class="form-control" name="email"
+                                value="<%=user.getEmail()%>" style="width: 65%" disabled>
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 25%">Change account details</button>
+            <input type="hidden" name="id" value="<%=user.getUserId()%>">
+            <input type="hidden" name="type" value="account">
+        </form>
+
+        <%}%>
+
+        <%if (form.equals("updacc")) {%>
+
+        <h2 class="sub-header">Change profile details</h2>
+        <form class="form-signin" role="form" action="Action" method="GET">
+            First name:
+            <input  type="text" placeholder="<%=user.getFname()%>"
+                    class="form-control" style="width: 65%" name="fname">
+            <br>
+            First name:
+            <input  type="text" placeholder="<%=user.getLname()%>"
+                    class="form-control" style="width: 65%" name="lname">
+            <br>
+            Email: <input type="text" class="form-control" name="email"
+                          placeholder="<%=user.getEmail()%>" style="width: 65%">
+            <br>
+            New Password: <input type="password" class="form-control" name="pass"
+                          style="width: 65%">
+            <br>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 25%">Submit</button>
+            <input type="hidden" name="id" value="<%=user.getUserId()%>">
+            <input type="hidden" name="type" value="updacc">
+        </form>
+
+        <%}%>
     </div>
 </div>
 <%=tags.getJquery()%>
@@ -89,6 +203,12 @@
             format: "dd-mm-yyyy"
         });
         $('#date1').datepicker({
+            format: "dd-mm-yyyy"
+        });
+        $('#date2').datepicker({
+            format: "dd-mm-yyyy"
+        });
+        $('#date3').datepicker({
             format: "dd-mm-yyyy"
         });
     });

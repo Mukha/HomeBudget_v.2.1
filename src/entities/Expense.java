@@ -39,6 +39,11 @@ public class Expense {
     private double size;
 
     /**
+     * Default constructor
+     */
+    public  Expense () {}
+
+    /**
      * The 6-parameter constructor. Is used to create an Expense instance.
      *
      * @param id the Expense's id.

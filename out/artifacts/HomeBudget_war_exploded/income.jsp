@@ -49,7 +49,8 @@
                             + "<th>Date</th>"
                             + "<th>Amount (KZT) </th>"
                             + "<th>Description</th>"
-                            + "<th></th>"
+                            + "<th><img src=\"img/edit.png\" width=\"25\" height=\"25\"></th>"
+                            + "<th><img src=\"img/delete.png\" width=\"25\" height=\"25\"></th>"
                             + "</tr>"
                             + "</thead>"
                             + "<tbody>");
@@ -70,6 +71,8 @@
                 </td>
                 <td><a href="Action?type=income&id=<%=in.getId()%>">
                     <img src="img/edit.png" width="25" height="25"></a></td>
+                <td><a href="Action?type=delincome&id=<%=in.getId()%>">
+                    <img src="img/delete.png" width="25" height="25"></a></td>
             </tr>
             <%
                     count++;
@@ -121,18 +124,19 @@
                         ArrayList<Category> cats = (ArrayList) dbc.findAllForIncomes();
                         Category cTemp = cats.get(cats.size()-1);
                         for (Category category : cats) {
-                            out.println("['" + category.getCategoryName() + "',");
                             ArrayList<Income> ins = (ArrayList) dbi.findIncomesByCategory(category.getCategoryId());
-                            double sum = 0;
-                            if (ins!=null) {
-                                for(Income in : ins) {
-                                    if (in.getUserId() == user.getUserId()) {
-                                    sum+=in.getSize();}
-                                }
+                            if (!ins.isEmpty()) {
+                                double sum = 0;
+                                out.println("['" + category.getCategoryName() + "',");
+                                    for(Income in : ins) {
+                                        if (in.getUserId() == user.getUserId()) {
+                                        sum+=in.getSize();}
+                                    }
+
+                                if (cTemp.getCategoryId() == category.getCategoryId()){
+                                    out.println(sum + "]");
+                                } else out.println(sum + "],");
                             }
-                            if (cTemp.getCategoryId() == category.getCategoryId()){
-                                out.println(sum + "]");
-                            } else out.println(sum + "],");
                         }
                     %>
                         ]
@@ -176,23 +180,23 @@
                     Category cTemp1 = cats1.get(cats1.size()-1);
                     for (Category category : cats1) {
 
-                    out.println("{");
-                    out.println(" name:'" + category.getCategoryName() + "',");
-                    out.println(" data: [ ");
-
                     ArrayList<Income> ins = (ArrayList) dbi.findIncomesByCategory(category.getCategoryId());
                     if (!ins.isEmpty()){
-                    Income temp = ins.get(ins.size()-1);
-                        for (Income in : ins) {
-                                if (in.getUserId() == user.getUserId()){
-                                    out.print(in.getSize());
-                                    if (in.getId() != temp.getId()) out.print(", ");
-                                }
-                        }
-                    out.println("]");
-                        if (cTemp1.getCategoryId() == category.getCategoryId()){
-                            out.println("}");
-                        } else out.println("},");
+                        out.println("{");
+                        out.println(" name:'" + category.getCategoryName() + "',");
+                        out.println(" data: [ ");
+
+                        Income temp = ins.get(ins.size()-1);
+                            for (Income in : ins) {
+                                    if (in.getUserId() == user.getUserId()){
+                                        out.print(in.getSize());
+                                        if (in.getId() != temp.getId()) out.print(", ");
+                                    }
+                            }
+                        out.println("]");
+                            if (cTemp1.getCategoryId() == category.getCategoryId()){
+                                out.println("}");
+                            } else out.println("},");
                     }
                     }
                     %>

@@ -172,7 +172,7 @@ public class DBUtilIncome implements IDBUtilInterface {
         return null;
     }
 
-    /**
+    /************************************************************
      * The <i>findAll()</i> method retrieves all incomes from the database
      * which are related to specific user.
      * <p/>

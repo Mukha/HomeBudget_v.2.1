@@ -168,4 +168,78 @@ public class DBUtilExpense implements IDBUtilInterface {
         }
         return null;
     }
+
+    /************************************************************
+     * The <i>findAll()</i> method retrieves all incomes from the database
+     * which are related to specific user.
+     * <p/>
+     *
+     * @param id the id of the user.
+     * Returns the array list of all incomes of specific user.
+     * @return the array list of all incomes of specific user.
+     * @see entities.Income
+     */
+    public ArrayList<Object> findExpenses(int id) {
+        try {
+            Connection conn = DriverManager.getConnection(url, username, password);
+            ArrayList<Expense> array = new ArrayList<Expense>();
+            if (conn != null) { // Connected
+                String sql = "SELECT * FROM expense WHERE user_id=" + id;
+
+                Statement statement = conn.createStatement();
+                ResultSet result = statement.executeQuery(sql);
+
+                while (result.next()) {
+                    array.add(new Expense(result.getInt("id"),
+                            result.getInt("category_id"),
+                            result.getInt("user_id"),
+                            result.getString("dateQ"),
+                            result.getString("description"),
+                            result.getDouble("sizeQ")
+                    ));
+                }
+                return (ArrayList) array;
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * The <i>findAll()</i> method retrieves all incomes from the database
+     * which are related to specific category.
+     * <p/>
+     *
+     * @param id the id of the category.
+     * Returns the array list of all incomes of specific category.
+     * @return the array list of all incomes of specific category.
+     * @see entities.Income
+     */
+    public ArrayList<Object> findExpensesByCategory(int id) {
+        try {
+            Connection conn = DriverManager.getConnection(url, username, password);
+            ArrayList<Expense> array = new ArrayList<Expense>();
+            if (conn != null) { // Connected
+                String sql = "SELECT * FROM expense WHERE category_id=" + id;
+
+                Statement statement = conn.createStatement();
+                ResultSet result = statement.executeQuery(sql);
+
+                while (result.next()) {
+                    array.add(new Expense(result.getInt("id"),
+                            result.getInt("category_id"),
+                            result.getInt("user_id"),
+                            result.getString("dateQ"),
+                            result.getString("description"),
+                            result.getDouble("sizeQ")
+                    ));
+                }
+                return (ArrayList) array;
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
 }

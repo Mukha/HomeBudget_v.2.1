@@ -6,10 +6,12 @@
 
 package servlets;
 
+import entities.Expense;
 import entities.Income;
 import entities.User;
 import interfaces.IDBUtilInterface;
 import utils.DBUtilCategory;
+import utils.DBUtilExpense;
 import utils.DBUtilIncome;
 import utils.DBUtilUser;
 
@@ -35,7 +37,8 @@ import javax.servlet.http.HttpSession;
 public class Action extends HttpServlet {
 
     DBUtilUser dbUtil = new DBUtilUser();
-    DBUtilIncome dbc = new DBUtilIncome();
+    DBUtilIncome dbi = new DBUtilIncome();
+    DBUtilExpense dbe = new DBUtilExpense();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -51,11 +54,12 @@ public class Action extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             String type = request.getParameter("type");
-            ArrayList<User> users = new ArrayList<User>();
+            ArrayList<User> users;
+            HttpSession session;
             if (type.equals("login")) {
                 String email = request.getParameter("email");
                 String password = request.getParameter("password");
-                HttpSession session = request.getSession();
+                session = request.getSession();
 
                 users = (ArrayList) dbUtil.findAll();
                 boolean flag = false;
@@ -71,7 +75,7 @@ public class Action extends HttpServlet {
                     response.sendRedirect("login.jsp?error=Incorrect email address or password!");
                 }
             } else if (type.equals("logout")) {
-                 HttpSession session = request.getSession();
+                 session = request.getSession();
                 if (session != null) {
                     session.removeAttribute("Account");
                 }
@@ -82,7 +86,7 @@ public class Action extends HttpServlet {
                 String lname = request.getParameter("lname");
                 String email = request.getParameter("email");
                 String password = request.getParameter("password");
-                HttpSession session = request.getSession();
+                session = request.getSession();
 
                 boolean flag = true;
                 if (dbUtil.equals(email,password)) {
@@ -117,16 +121,98 @@ public class Action extends HttpServlet {
                 double size = Double.parseDouble(request.getParameter("size"));
                 String description = request.getParameter("desc");
 
+                session = request.getSession();
+
                 Income income = new Income();
                 income.setCategoryId(categoryId);
                 income.setDate(date);
                 income.setSize(size);
                 income.setDescription(description);
-                User user = (User)request.getAttribute("Account");
+                User user = (User)session.getAttribute("Account");
                 income.setUserId(user.getUserId());
-                dbc.insert(income);
+                dbi.insert(income);
+                response.sendRedirect("income.jsp");
             } else if (type.equals("newexp")) {
-            }else {}
+                int categoryId = Integer.parseInt(request.getParameter("category"));
+                String date = request.getParameter("date");
+                double size = Double.parseDouble(request.getParameter("size"));
+                String description = request.getParameter("desc");
+
+                session = request.getSession();
+
+                Expense exp = new Expense();
+                exp.setCategoryId(categoryId);
+                exp.setDate(date);
+                exp.setSize(size);
+                exp.setDescription(description);
+                User user = (User)session.getAttribute("Account");
+                exp.setUserId(user.getUserId());
+                dbe.insert(exp);
+                response.sendRedirect("expense.jsp");
+            } else if (type.equals("delincome")) {
+                int id = Integer.parseInt(request.getParameter("id"));
+
+                Income temp = (Income) dbi.findById(id);
+                dbi.delete(temp);
+                response.sendRedirect("income.jsp");
+
+            } else if (type.equals("delexpense")) {
+                int id = Integer.parseInt(request.getParameter("id"));
+
+                Expense temp = (Expense) dbi.findById(id);
+                dbi.delete(temp);
+                response.sendRedirect("expense.jsp");
+            } else if (type.equals("income")) {
+                int id = Integer.parseInt(request.getParameter("id"));
+                response.sendRedirect("form.jsp?form=updinc&id="+id);
+            } else if (type.equals("expense")) {
+                int id = Integer.parseInt(request.getParameter("id"));
+                response.sendRedirect("form.jsp?form=updexp&id="+id);
+            } else if (type.equals("updexp")) {
+                int categoryId = Integer.parseInt(request.getParameter("category"));
+                String date = request.getParameter("date");
+                double size = Double.parseDouble(request.getParameter("size"));
+                String description = request.getParameter("description");
+                int id = Integer.parseInt(request.getParameter("id"));
+
+                Expense exp = (Expense) dbe.findById(id);
+                exp.setCategoryId(categoryId);
+                exp.setDate(date);
+                exp.setSize(size);
+                exp.setDescription(description);
+                dbe.update(exp);
+                response.sendRedirect("expense.jsp");
+            } else if (type.equals("updinc")) {
+                int categoryId = Integer.parseInt(request.getParameter("category"));
+                String date = request.getParameter("date");
+                double size = Double.parseDouble(request.getParameter("size"));
+                String description = request.getParameter("description");
+                int id = Integer.parseInt(request.getParameter("id"));
+
+                Income inc = (Income) dbi.findById(id);
+                inc.setCategoryId(categoryId);
+                inc.setDate(date);
+                inc.setSize(size);
+                inc.setDescription(description);
+                dbi.update(inc);
+                response.sendRedirect("income.jsp");
+            } else if (type.equals("account")) {
+                int id = Integer.parseInt(request.getParameter("id"));
+                response.sendRedirect("form.jsp?form=updacc&id="+id);
+            } else if (type.equals("updacc")) {
+                int id = Integer.parseInt(request.getParameter("id"));
+                User user = (User) dbUtil.findById(id);
+
+                user.setFname(request.getParameter("fname"));
+                user.setLname(request.getParameter("lname"));
+                user.setEmail(request.getParameter("email"));
+                user.setPassword(request.getParameter("pass"));
+                dbUtil.update(user);
+                session = request.getSession();
+                session.removeAttribute("Account");
+                session.setAttribute("Account", user);
+                response.sendRedirect("form.jsp?form=account");
+            } else {}
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
