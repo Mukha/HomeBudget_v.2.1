@@ -3,6 +3,7 @@ package ejbs;
 import entities.Expense;
 import entities.Income;
 import interfaces.ICalcBeanInterface;
+import utils.DBUtilIncome;
 
 import javax.ejb.Stateless;
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ public class CalcBean implements ICalcBeanInterface{
      */
     public CalcBean() { }
 
+
     /**
      * The <i>statIncomesMonth()</i> method is used to
      * calculate the incomes statistics by the current month.
@@ -33,6 +35,9 @@ public class CalcBean implements ICalcBeanInterface{
      */
     @Override
     public double statIncomesMonth() {
+
+
+
         return 0;
     }
 
@@ -114,23 +119,5 @@ public class CalcBean implements ICalcBeanInterface{
         return 0;
     }
 
-    /**
-     * The <i>getIncomes()</i> is used to retrieve the all incomes data
-     * of the specific user.
-     * Returns the array list of incomes.
-     * @return the array list of incomes.
-     */
-    public ArrayList<Income> getIncomes() {
-        return null;
-    }
 
-    /**
-     * The <i>getExpenses()</i> is used to retrieve the all expenses data
-     * of the specific user.
-     * Returns the array list of expenses.
-     * @return the array list of expenses.
-     */
-    public ArrayList<Expense> getExpenses() {
-        return null;
-    }
 }

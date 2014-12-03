@@ -38,6 +38,9 @@ public class DBUtilExpense implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -65,6 +68,9 @@ public class DBUtilExpense implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -89,6 +95,9 @@ public class DBUtilExpense implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -123,6 +132,10 @@ public class DBUtilExpense implements IDBUtilInterface {
                             result.getString("description"),
                             result.getDouble("sizeQ")));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return (ArrayList) array;
             }
         } catch (SQLException ex) {
@@ -161,6 +174,10 @@ public class DBUtilExpense implements IDBUtilInterface {
                             result.getString("description"),
                             result.getDouble("sizeQ"));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return null;
             }
         } catch (SQLException ex) {
@@ -198,6 +215,10 @@ public class DBUtilExpense implements IDBUtilInterface {
                             result.getDouble("sizeQ")
                     ));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return (ArrayList) array;
             }
         } catch (SQLException ex) {
@@ -235,11 +256,79 @@ public class DBUtilExpense implements IDBUtilInterface {
                             result.getDouble("sizeQ")
                     ));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return (ArrayList) array;
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
         return null;
+    }
+
+    /**
+     * The <i>findAll()</i> method retrieves all incomes from the database
+     * which are related to specific category.
+     * <p/>
+     *
+     * @param month
+     * Returns the array list of all incomes of specific category.
+     * @return the array list of all incomes of specific category.
+     * @see entities.Income
+     */
+    public double findExpenseByMonth(String month) {
+        double sum = 0.0;
+        String sql = "SELECT * FROM expense as e " +
+                "WHERE UPPER(dateQ) LIKE ? ";
+        try {
+            Connection connection = DriverManager.getConnection(url, username, password);
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1, "%" + month.toUpperCase() + "%");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                sum += rs.getDouble("sizeQ");
+            }
+
+            rs.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+        return sum;
+    }
+
+    /**
+     * The <i>findAll()</i> method retrieves all incomes from the database
+     * which are related to specific category.
+     * <p/>
+     *
+     * @param year
+     * Returns the array list of all incomes of specific category.
+     * @return the array list of all incomes of specific category.
+     * @see entities.Income
+     */
+    public double findExpenseByYear(String year) {
+        double sum = 0.0;
+        String sql = "SELECT * FROM expense as e " +
+                "WHERE UPPER(dateQ) LIKE ? ";
+        try {
+            Connection connection = DriverManager.getConnection(url, username, password);
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1, "%" + year.toUpperCase() + "%");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                sum += rs.getDouble("sizeQ");
+            }
+
+            rs.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+        return sum;
     }
 }

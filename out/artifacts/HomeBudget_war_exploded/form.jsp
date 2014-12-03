@@ -173,15 +173,15 @@
         <h2 class="sub-header">Change profile details</h2>
         <form class="form-signin" role="form" action="Action" method="GET">
             First name:
-            <input  type="text" placeholder="<%=user.getFname()%>"
+            <input  type="text" value="<%=user.getFname()%>"
                     class="form-control" style="width: 65%" name="fname">
             <br>
             First name:
-            <input  type="text" placeholder="<%=user.getLname()%>"
+            <input  type="text" value="<%=user.getLname()%>"
                     class="form-control" style="width: 65%" name="lname">
             <br>
             Email: <input type="text" class="form-control" name="email"
-                          placeholder="<%=user.getEmail()%>" style="width: 65%">
+                          value="<%=user.getEmail()%>" style="width: 65%">
             <br>
             New Password: <input type="password" class="form-control" name="pass"
                           style="width: 65%">
@@ -200,16 +200,16 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#date').datepicker({
-            format: "dd-mm-yyyy"
+            format: "yyyy-mm-dd"
         });
         $('#date1').datepicker({
-            format: "dd-mm-yyyy"
+            format: "yyyy-mm-dd"
         });
         $('#date2').datepicker({
-            format: "dd-mm-yyyy"
+            format: "yyyy-mm-dd"
         });
         $('#date3').datepicker({
-            format: "dd-mm-yyyy"
+            format: "yyyy-mm-dd"
         });
     });
 </script>

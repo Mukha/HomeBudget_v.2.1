@@ -37,6 +37,9 @@ public class DBUtilCategory implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -62,6 +65,9 @@ public class DBUtilCategory implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -86,6 +92,9 @@ public class DBUtilCategory implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -116,6 +125,10 @@ public class DBUtilCategory implements IDBUtilInterface {
                     array.add(new Category(result.getInt("category_id"),
                             result.getString("category_name")));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return (ArrayList) array;
             }
         } catch (SQLException ex) {
@@ -150,6 +163,10 @@ public class DBUtilCategory implements IDBUtilInterface {
                     return new Category(result.getInt("category_id"),
                             result.getString("category_name"));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return null;
             }
         } catch (SQLException ex) {
@@ -176,6 +193,10 @@ public class DBUtilCategory implements IDBUtilInterface {
                 Statement statement = conn.createStatement();
                 ResultSet result = statement.executeQuery(sql);
                 lastId = result.getInt("last_id");
+
+                statement.close();
+                result.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -207,6 +228,10 @@ public class DBUtilCategory implements IDBUtilInterface {
                     array.add(new Category(result.getInt("category_id"),
                             result.getString("category_name")));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return (ArrayList) array;
             }
         } catch (SQLException ex) {
@@ -239,6 +264,10 @@ public class DBUtilCategory implements IDBUtilInterface {
                     array.add(new Category(result.getInt("category_id"),
                             result.getString("category_name")));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return (ArrayList) array;
             }
         } catch (SQLException ex) {

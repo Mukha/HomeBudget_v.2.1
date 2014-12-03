@@ -54,6 +54,10 @@ public class DBUtilUser implements IDBUtilInterface {
                             u.getPassword().equals(passwordUser))
                         return true;
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -81,6 +85,9 @@ public class DBUtilUser implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -108,6 +115,9 @@ public class DBUtilUser implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -132,6 +142,9 @@ public class DBUtilUser implements IDBUtilInterface {
 
                 Statement statement = conn.createStatement();
                 statement.executeUpdate(sql);
+
+                statement.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -165,6 +178,10 @@ public class DBUtilUser implements IDBUtilInterface {
                             result.getString("email"),
                             result.getString("password")));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return (ArrayList) array;
             }
         } catch (SQLException ex) {
@@ -202,6 +219,10 @@ public class DBUtilUser implements IDBUtilInterface {
                             result.getString("email"),
                             result.getString("password"));
                 }
+
+                statement.close();
+                result.close();
+                conn.close();
                 return null;
             }
         } catch (SQLException ex) {
@@ -228,6 +249,10 @@ public class DBUtilUser implements IDBUtilInterface {
                 Statement statement = conn.createStatement();
                 ResultSet result = statement.executeQuery(sql);
                 lastId = result.getInt("last_id");
+
+                statement.close();
+                result.close();
+                conn.close();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
