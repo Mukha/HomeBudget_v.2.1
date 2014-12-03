@@ -288,14 +288,14 @@ public class DBUtilIncome implements IDBUtilInterface {
      * @return the array list of all incomes of specific category.
      * @see entities.Income
      */
-    public double findIncomesByMonth(String month) {
+    public double findIncomesByMonth(String month, int id) {
         double sum = 0.0;
         String sql = "SELECT * FROM income as e " +
-                "WHERE UPPER(dateQ) LIKE ? ";
+                "WHERE UPPER(dateQ) LIKE ? AND user_id=" + id;
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1, "%" + month.toUpperCase() + "%");
+            ps.setString(1, "%-" + month.toUpperCase() + "-%");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 sum += rs.getDouble("sizeQ");

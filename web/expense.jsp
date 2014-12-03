@@ -27,10 +27,12 @@
         <h2 class="sub-header">My Expenses</h2>
         <% ArrayList<Expense> expenses = (ArrayList) dbe.findExpenses(user.getUserId());
             if (!expenses.isEmpty()) {
-                out.println("<div id = \"chart\" ></div >");
+                out.println("<div id = \"chart\" ></div ><hr>");
                 out.println("<div id = \"chart2\" ></div >");
             } %>
+        <hr>
         <div class="table-responsive">
+            <h4 class="sub-header">Table of the expenses</h4>
             <%
                 if (expenses.isEmpty()) {
                     out.println("<p>");
@@ -156,8 +158,8 @@
                 },
                 xAxis: {
                     categories: [/*'January', 'February', 'March', 'April',
-                     'May', 'June', 'July', 'August',*/ 'September', 'October',
-                        'November', 'December']
+                     'May', 'June', 'July', 'August', 'September', 'October',
+                        'November', 'December'*/]
                 },
                 yAxis: {
                     title: {

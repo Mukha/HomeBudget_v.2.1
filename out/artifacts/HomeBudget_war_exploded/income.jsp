@@ -29,10 +29,12 @@
         <h2 class="sub-header">My incomes</h2>
         <% ArrayList<Income> incomes = (ArrayList) dbi.findIncomes(user.getUserId());
             if (!incomes.isEmpty()) {
-                out.println("<div id = \"chart\" ></div >");
+                out.println("<div id = \"chart\" ></div ><hr>");
                 out.println("<div id = \"chart2\" ></div >");
             } %>
+        <hr>
         <div class="table-responsive">
+            <h4 class="sub-header">Table of the incomes</h4>
             <%
                 if (incomes.isEmpty()) {
                     out.println("<p>");
@@ -158,8 +160,8 @@
                 },
                 xAxis: {
                     categories: [/*'January', 'February', 'March', 'April',
-                    'May', 'June', 'July', 'August',*/ 'September', 'October',
-                    'November', 'December']
+                    'May', 'June', 'July', 'August', 'September', 'October',
+                    'November', 'December'*/]
                 },
                 yAxis: {
                     title: {
