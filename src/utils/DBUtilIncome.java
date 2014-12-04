@@ -320,10 +320,10 @@ public class DBUtilIncome implements IDBUtilInterface {
      * @return the array list of all incomes of specific category.
      * @see entities.Income
      */
-    public double findIncomesByYear(String year) {
+    public double findIncomesByYear(String year, int id) {
         double sum = 0.0;
         String sql = "SELECT * FROM income as e " +
-                "WHERE UPPER(dateQ) LIKE ? ";
+                "WHERE UPPER(dateQ) LIKE ? and user_id="+id;
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
             PreparedStatement ps = connection.prepareStatement(sql);

@@ -99,6 +99,8 @@ public class Action extends HttpServlet {
                     u.setLname(lname);
                     u.setEmail(email);
                     u.setPassword(password);
+                    //double n = System.currentTimeMillis()/1000L;
+                    //u.setUserId((int)n);
 
                     dbUtil.insert(u);
                     int id = dbUtil.getLastID();

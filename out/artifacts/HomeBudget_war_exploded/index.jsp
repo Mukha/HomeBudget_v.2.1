@@ -22,41 +22,38 @@
     <div class="jumbotron">
         <h1>Welcome!</h1>
 
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus
-            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <p class="lead">This web-application allows to manage the household budget.</p>
+        <!--<img src="img/HouseholdBudget.jpg" class="img-responsive" width="400" height="300">
+        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
     </div>
 
     <div class="row marketing">
         <div class="col-lg-6">
-            <h4>Subheading</h4>
+            <h4>Manage Income</h4>
 
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            <p>Add, delete, retrieve and maintain all your income records.</p>
 
-            <h4>Subheading</h4>
+            <h4>Manage Expenditure</h4>
 
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet
-                fermentum.</p>
+            <p>Add, delete, retrieve and maintain all your expense records.</p>
 
-            <h4>Subheading</h4>
+            <!--<h4>Statistics</h4>
 
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p>Get annual and monthly statistics.</p>-->
         </div>
 
         <div class="col-lg-6">
-            <h4>Subheading</h4>
+            <h4>Statistics</h4>
 
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            <p>Get annual and monthly statistics</p>
 
-            <h4>Subheading</h4>
+            <h4>Forecasting</h4>
 
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet
-                fermentum.</p>
+            <p>Analyze the cash flow and get the future budget transactions.</p>
 
-            <h4>Subheading</h4>
+            <!--<h4>Subheading</h4>
 
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>-->
         </div>
     </div>
 

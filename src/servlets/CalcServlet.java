@@ -25,8 +25,9 @@ public class CalcServlet extends HttpServlet {
             String type = request.getParameter("type");
             if (type.equals("monthstat")) {
                 response.sendRedirect("statistics.jsp?type=display&month="+request.getParameter("monthnum"));
+            } else if (type.equals("forecast")){
+                response.sendRedirect("forecast.jsp?type=display&month="+request.getParameter("monthnum"));
             }
-
         } finally {
             out.close();
         }

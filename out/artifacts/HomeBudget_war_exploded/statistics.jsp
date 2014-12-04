@@ -1,6 +1,7 @@
 <%@ page import="utils.DBUtilIncome" %>
 <%@ page import="utils.DBUtilExpense" %>
 <%@ page import="java.util.Calendar" %>
+<%@ page import="entities.User" %>
 <jsp:useBean id="tags" scope="page" class='classes.CommonTags'/>
 <%
     // Get an error messages in the request object.
@@ -24,11 +25,12 @@
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
         <%
+            User user = (User) session.getAttribute("Account");
             String month = request.getParameter("month");
             int year = Calendar.getInstance().get(Calendar.YEAR);
             String query = Integer.toString(year);
-            double yearInc = dbi.findIncomesByYear(query);
-            double yearExp = dbe.findExpenseByYear(query);
+            double yearInc = dbi.findIncomesByYear(query,user.getUserId());
+            double yearExp = dbe.findExpenseByYear(query,user.getUserId());
             double mInc = 0;
             double mExp = 0;
 
@@ -66,7 +68,13 @@
         </div>
         <%}%>
 
-        <%if (type.equals("ivse")){%>
+        <%if (type.equals("ivse")){
+            if (yearInc==0 && yearExp==0) {%>
+        <h2>There are no income and expenses for <%=year%> year. </h2>
+        <br>
+        <a class="btn btn-default" href="Action?type=addinc" role="button" h>Add income</a>
+        <a class="btn btn-default" href="Action?type=addexp" role="button" h>Add expense</a>
+        <% } else { %>
         <h2 align="center">The current budget statistics</h2>
         <div id="chart"></div>
         <div class="row placeholders">
@@ -83,12 +91,12 @@
                     </tbody>
             </table>
         </div>
-         <%}%>
+         <%}}%>
         <%if (type.equals("display")){
 
             if (month!=null) {
-                mInc = dbi.findIncomesByMonth(month);
-                mExp = dbe.findExpenseByMonth(month);
+                mInc = dbi.findIncomesByMonth(month,user.getUserId());
+                mExp = dbe.findExpenseByMonth(month,user.getUserId());
             }
 
             if (mInc==0 && mExp==0) {%>

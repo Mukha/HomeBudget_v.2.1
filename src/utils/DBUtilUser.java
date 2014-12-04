@@ -244,11 +244,11 @@ public class DBUtilUser implements IDBUtilInterface {
             Connection conn = DriverManager.getConnection(url, username, password);
 
             if (conn != null) { // Connected
-                String sql = "SELECT last_insert_id() as last_id from users";
+                String sql = "SELECT max(user_id) FROM `users`";
 
                 Statement statement = conn.createStatement();
                 ResultSet result = statement.executeQuery(sql);
-                lastId = result.getInt("last_id");
+                if (result.next())lastId = result.getInt("max(user_id)");
 
                 statement.close();
                 result.close();

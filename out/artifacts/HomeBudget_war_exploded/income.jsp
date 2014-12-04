@@ -34,16 +34,17 @@
             } %>
         <hr>
         <div class="table-responsive">
-            <h4 class="sub-header">Table of the incomes</h4>
+
             <%
                 if (incomes.isEmpty()) {
+                    out.println("<h4>You have no income.</h4><br>");
                     out.println("<p>");
                     out.println("<a href=\"Action?type=addinc&id=" + user.getUserId() + "\" class=\"btn btn-primary btn-lg active\" role=\"button\">" +
                             "Add income</a>");
                     out.println("</p>");
                 } else {
 
-                    out.println("<table class=\"table table-striped\">" +
+                    out.println("<h4 class=\"sub-header\">Table of the incomes</h4><table class=\"table table-striped\">" +
                             "<thead>"
                             + "<tr>"
                             + "<th>№</th>"

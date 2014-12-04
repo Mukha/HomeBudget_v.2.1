@@ -278,10 +278,10 @@ public class DBUtilExpense implements IDBUtilInterface {
      * @return the array list of all incomes of specific category.
      * @see entities.Income
      */
-    public double findExpenseByMonth(String month) {
+    public double findExpenseByMonth(String month,int id) {
         double sum = 0.0;
         String sql = "SELECT * FROM expense as e " +
-                "WHERE UPPER(dateQ) LIKE ? ";
+                "WHERE UPPER(dateQ) LIKE ? AND user_id="+id;
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
             PreparedStatement ps = connection.prepareStatement(sql);
@@ -310,10 +310,10 @@ public class DBUtilExpense implements IDBUtilInterface {
      * @return the array list of all incomes of specific category.
      * @see entities.Income
      */
-    public double findExpenseByYear(String year) {
+    public double findExpenseByYear(String year,int id) {
         double sum = 0.0;
         String sql = "SELECT * FROM expense as e " +
-                "WHERE UPPER(dateQ) LIKE ? ";
+                "WHERE UPPER(dateQ) LIKE ? AND user_id="+id;
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
             PreparedStatement ps = connection.prepareStatement(sql);

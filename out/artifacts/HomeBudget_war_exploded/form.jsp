@@ -65,7 +65,7 @@
             Date:
             <input  type="text" placeholder="Date" class="form-control"  id="date1" style="width: 20%" name="date">
             <br>
-            Amount (KZT): <input type="text" class="form-control" placeholder="Amount" style="width: 35%"><br>
+            Amount (KZT): <input type="text" name="size" class="form-control" placeholder="Amount" style="width: 35%"><br>
             Category:
             <select class="form-control" name="category" style="width: 65%">
                 <%ArrayList<Category> categories = (ArrayList) dbc.findAllForExpenses();
@@ -79,7 +79,7 @@
         </textarea>
             <br>
             <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 25%">Submit</button>
-            <input type="hidden" name="type" value="newinc">
+            <input type="hidden" name="type" value="newexp">
         </form>
         <%}%>
 
